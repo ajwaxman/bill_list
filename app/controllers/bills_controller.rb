@@ -40,6 +40,7 @@ class BillsController < ApplicationController
       else
         format.html { render action: "index" }
         format.json { render json: @bill.errors, status: :unprocessable_entity }
+      end
     end
   end
 

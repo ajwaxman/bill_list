@@ -1,0 +1,22 @@
+$break1: 720px;
+
+.align-center {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: blue; 
+  margin: 0 auto;
+  margin-bottom: 5px;
+  height: 70px; 
+  width: 700px;
+  @media (max-width: $break1) {
+    width: 100%;
+  }
+}
