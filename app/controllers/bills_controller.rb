@@ -1,7 +1,7 @@
 class BillsController < ApplicationController
 
   def index
-    @bills = Bill.all
+    @bills = Bill.sorted_by_days_until_due
 
     respond_to do |format|
       format.html
