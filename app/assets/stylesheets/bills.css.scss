@@ -7,22 +7,26 @@ $break1: 720px;
 ul {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
 }
 
 li {
   list-style: none;
   background: blue; 
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 15px;
   margin-bottom: 5px;
-  height: 40px; 
+  height: 45px; 
   width: 700px;
+  font-family: 'brandon-grotesque';
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  color: #444;
   @media (max-width: $break1) {
     width: 100%;
+    font-size: 20px;
   }
-  font-family: 'runda';
-  font-size: 20px;
-  text-align: center;
 }
 
 .bill-name {
@@ -31,4 +35,8 @@ li {
 
 .days-to-pay {
 
+}
+
+body {
+  // background: black;
 }

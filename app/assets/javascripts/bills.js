@@ -60,14 +60,19 @@ $(document).ready(function(){
     billDate.setMilliseconds(0);
     billDate.setDate(billDay);
     if (today.getDate() == billDay) {
-      $(this).text("Today!");
+      $(this).text(" is due Today!");
     } else if (today.getDate() > billDay) {
       billDate.setMonth(month + 1);
-      $(this).text(daydiff(today,billDate)); 
+      $(this).text("is due in " + daydiff(today,billDate) + " days"); 
     } else {
-      $(this).text(daydiff(today,billDate));
+      $(this).text("is due in " + daydiff(today,billDate) + " days"); 
     }
     $(this).parent().css('background', colors[daydiff(today,billDate)]);
+
+    if (daydiff(today,billDate) < 8)
+      $(this).parent().css('color', 'white');
+    if (daydiff(today,billDate) == 1)
+      $(this).text("is due in " + daydiff(today,billDate) + " day"); 
   })
 
 
