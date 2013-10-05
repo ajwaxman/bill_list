@@ -13,10 +13,22 @@ li {
   list-style: none;
   background: blue; 
   margin: 0 auto;
+  padding-top: 20px;
   margin-bottom: 5px;
-  height: 70px; 
+  height: 40px; 
   width: 700px;
   @media (max-width: $break1) {
     width: 100%;
   }
+  font-family: 'runda';
+  font-size: 20px;
+  text-align: center;
+}
+
+.bill-name {
+
+}
+
+.days-to-pay {
+
 }

@@ -4,13 +4,12 @@ class Bill < ActiveRecord::Base
   def days_until_due
     today = Time.now
     simple_today = Time.new(today.year, today.month, today.day)
-    if day < today.day
+    if day >= today.day
       month_due = today.month
     else
       month_due = today.month + 1
     end
-    day_due = Date.new(today.year,month_due,day)
-    binding.pry
+    day_due = Time.new(today.year,month_due,day)
     return ((day_due - simple_today)/(60*60*24)).to_i
   end
 

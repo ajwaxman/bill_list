@@ -49,17 +49,6 @@ $(document).ready(function(){
   today.setSeconds(0);
   today.setMilliseconds(0);
 
-  var sortItems = function() {
-      var $items = $('ul li');
-      $items.sort(function(a, b) {
-          var keyA = $(a).data('day');
-          var keyB = $(b).data('day');
-          return (keyA > keyB) ? 1 : 0;
-      });
-      $.each($items, function(index, row){
-          $('ul').append(row);
-      });
-  } 
 
   // insert days until bill is due into span.days-to-pay using today's date and the day of month the bill is due
   $(".days-to-pay").each(function(i, span){
@@ -79,7 +68,6 @@ $(document).ready(function(){
       $(this).text(daydiff(today,billDate));
     }
     $(this).parent().css('background', colors[daydiff(today,billDate)]);
-    sortItems();
   })
 
 

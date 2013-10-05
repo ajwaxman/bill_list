@@ -2,9 +2,8 @@
 <ul id="bill-list">
 <% @bills.each do |bill| %>
   <li class="bill-list-item">
-    Name:<%= bill.name %><br>
-    Day of Month: <%= bill.day %><br> 
-    Days Until Due: <span class="days-to-pay" data-day="<%= bill.day %>"></span>
+    <span class="bill-name"><%= bill.name %></span>
+    <span class="days-to-pay" data-day="<%= bill.day %>"></span>
   </li>
 <% end %>
 </ul>

@@ -7,6 +7,10 @@ gem 'rails', '3.2.12'
 
 gem 'sqlite3'
 
+group :development do 
+  gem 'better_errors'       # => gem to display errors better for debugging
+  gem 'binding_of_caller'   # => works with better_errors to show instance variables
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
