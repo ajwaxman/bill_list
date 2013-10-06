@@ -1,0 +1,74 @@
+.background-image {
+  background: url(background.jpg) no-repeat center;
+  background-size: cover;
+  h1 {
+    font-family: 'reenie-beanie';
+    margin: 0;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  // .main-title, .fancy-title {
+  //   -webkit-transition: all 1s ease-in-out;
+  //   -moz-transition: all 1s ease-in-out;
+  //   -o-transition: all 1s ease-in-out;
+  //   -ms-transition: all 1s ease-in-out;    
+  //   transition: all 1s ease-in-out;
+  // }
+
+  .char6{padding-top:3px}
+  .char10{padding-right: 12px}
+}
+
+#slides {
+  display: none;
+}
+
+.slides {
+  margin-top: 70px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.nav {
+  position: relative;
+  top: -50px;
+  z-index: 100;
+  i {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.nav-left {
+  margin-left: 30px;
+}
+.nav-right {
+  margin-left: 500px;
+}
+
+.green {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;    
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: #0BFB55;
+  }
+}
+
+.red {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;    
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: #FE1344;
+  }
+}
+
